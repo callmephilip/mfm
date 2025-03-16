@@ -4,7 +4,10 @@
     "jsr:@std/assert@*": "1.0.11",
     "jsr:@std/dotenv@*": "0.225.3",
     "jsr:@std/internal@^1.0.5": "1.0.5",
-    "npm:@google/generative-ai@0.24": "0.24.0"
+    "jsr:@std/path@^1.0.8": "1.0.8",
+    "npm:@google/generative-ai@0.24": "0.24.0",
+    "npm:fluent-ffmpeg@^2.1.3": "2.1.3",
+    "npm:ytdl-core@^4.11.5": "4.11.5"
   },
   "jsr": {
     "@std/assert@1.0.11": {
@@ -18,16 +21,62 @@
     },
     "@std/internal@1.0.5": {
       "integrity": "54a546004f769c1ac9e025abd15a76b6671ddc9687e2313b67376125650dc7ba"
+    },
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
     }
   },
   "npm": {
     "@google/generative-ai@0.24.0": {
       "integrity": "sha512-fnEITCGEB7NdX0BhoYZ/cq/7WPZ1QS5IzJJfC3Tg/OwkvBetMiVJciyaan297OvE4B9Jg1xvo0zIazX/9sGu1Q=="
+    },
+    "async@0.2.10": {
+      "integrity": "sha512-eAkdoKxU6/LkKDBzLpT+t6Ff5EtfSF4wx1WfJiPEEV7WNLnDaRXk0oVysiEPm262roaachGexwUv94WhSgN5TQ=="
+    },
+    "fluent-ffmpeg@2.1.3": {
+      "integrity": "sha512-Be3narBNt2s6bsaqP6Jzq91heDgOEaDCJAXcE3qcma/EJBSy5FB4cvO31XBInuAuKBx8Kptf8dkhjK0IOru39Q==",
+      "dependencies": [
+        "async",
+        "which"
+      ]
+    },
+    "isexe@2.0.0": {
+      "integrity": "sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw=="
+    },
+    "m3u8stream@0.8.6": {
+      "integrity": "sha512-LZj8kIVf9KCphiHmH7sbFQTVe4tOemb202fWwvJwR9W5ENW/1hxJN6ksAWGhQgSBSa3jyWhnjKU1Fw1GaOdbyA==",
+      "dependencies": [
+        "miniget",
+        "sax"
+      ]
+    },
+    "miniget@4.2.3": {
+      "integrity": "sha512-SjbDPDICJ1zT+ZvQwK0hUcRY4wxlhhNpHL9nJOB2MEAXRGagTljsO8MEDzQMTFf0Q8g4QNi8P9lEm/g7e+qgzA=="
+    },
+    "sax@1.4.1": {
+      "integrity": "sha512-+aWOz7yVScEGoKNd4PA10LZ8sk0A/z5+nXQG5giUO5rprX9jgYsTdov9qCchZiPIZezbZH+jRut8nPodFAX4Jg=="
+    },
+    "which@1.3.1": {
+      "integrity": "sha512-HxJdYWq1MTIQbJ3nw0cqssHoTNU267KlrDuGZ1WYlxDStUtKUhOaJmh112/TZmHxxUfuJqPXSOm7tDyas0OSIQ==",
+      "dependencies": [
+        "isexe"
+      ]
+    },
+    "ytdl-core@4.11.5": {
+      "integrity": "sha512-27LwsW4n4nyNviRCO1hmr8Wr5J1wLLMawHCQvH8Fk0hiRqrxuIu028WzbJetiYH28K8XDbeinYW4/wcHQD1EXA==",
+      "dependencies": [
+        "m3u8stream",
+        "miniget",
+        "sax"
+      ]
     }
   },
   "workspace": {
     "dependencies": [
-      "npm:@google/generative-ai@0.24"
+      "jsr:@std/path@^1.0.8",
+      "npm:@google/generative-ai@0.24",
+      "npm:fluent-ffmpeg@^2.1.3",
+      "npm:ytdl-core@^4.11.5"
     ]
   }
 }

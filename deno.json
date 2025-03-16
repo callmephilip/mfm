@@ -10,7 +10,10 @@
   "exports": { ".": "./mod.ts" },
   "imports": {
     "@google/generative-ai": "npm:@google/generative-ai@^0.24.0",
-    "mfm/": "./mfm/"
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "fluent-ffmpeg": "npm:fluent-ffmpeg@^2.1.3",
+    "mfm/": "./mfm/",
+    "ytdl-core": "npm:ytdl-core@^4.11.5"
   },
   "publish": { "exclude": ["nbs/", "docs/"] },
   "exclude": ["_docs", "docs"]
